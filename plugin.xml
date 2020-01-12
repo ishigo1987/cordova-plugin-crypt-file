@@ -35,7 +35,7 @@
 
     <cryptfiles>
         <include>
-            <file regex="app\src\.(js)$" />
+            <file regex="\.(js)$" />
         </include>
         <exclude>
         </exclude>
