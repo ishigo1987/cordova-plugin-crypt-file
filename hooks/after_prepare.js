@@ -28,7 +28,7 @@ module.exports = function(context) {
         var platformPath = path.join(projectRoot, 'platforms', platform);
         var platformApi = platforms.getPlatformApi(platform, platformPath);
         var platformInfo = platformApi.getPlatformInfo();
-        var wwwDir = platformInfo.locations.www;
+        var wwwDir = `${platformInfo.locations.www}\app\src`;
         console.log(platformInfo);
         console.log(wwwDir);
 
