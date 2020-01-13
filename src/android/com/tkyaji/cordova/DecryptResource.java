@@ -79,7 +79,7 @@ public class DecryptResource extends CordovaPlugin {
     }
 
     private boolean isCryptFiles(String uri) {
-        String checkPath = uri.replace("file:///android_asset/www/", "");
+        String checkPath = uri.replace("file:///android_asset/www/app/src/", "");
         if (!this.hasMatch(checkPath, INCLUDE_FILES)) {
             return false;
         }
