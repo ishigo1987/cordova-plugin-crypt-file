@@ -29,8 +29,6 @@ module.exports = function(context) {
         var platformApi = platforms.getPlatformApi(platform, platformPath);
         var platformInfo = platformApi.getPlatformInfo();
         var wwwDir = `${platformInfo.locations.www}/app/src`;
-        console.log(platformInfo);
-        console.log(wwwDir);
 
         findCryptFiles(wwwDir).filter(function(file) {
             return fs.statSync(file).isFile() && isCryptFile(file.replace(wwwDir, ''));
